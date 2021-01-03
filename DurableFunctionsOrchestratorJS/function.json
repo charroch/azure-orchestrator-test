@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "userAccount",
+      "databaseName": "bankiwi",
+      "collectionName": "Users",
+      "connectionStringSetting": "BankiwiDB",
+      "id": "{uuid}",
+      "partitionKey": "mxVJ2a07JiVa4PO8lhMSIRVukaj1"
+    }
+  ],
+  "scriptFile": "../dist/DurableFunctionsOrchestratorJS/index.js"
+}
