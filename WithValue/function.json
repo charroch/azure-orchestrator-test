@@ -12,9 +12,9 @@
       "databaseName": "bankiwi",
       "collectionName": "Users",
       "connectionStringSetting": "BankiwiDB",
-      "id": "{uuid}",
-      "partitionKey": "mxVJ2a07JiVa4PO8lhMSIRVukaj1"
+      "id": "123",
+      "partitionKey": "123"
     }
   ],
-  "scriptFile": "../dist/DurableFunctionsOrchestratorJS/index.js"
+  "scriptFile": "../dist/WithValue/index.js"
 }

@@ -6,7 +6,6 @@ const httpStart: AzureFunction = async function (context: Context, req: HttpRequ
     const instanceId = await client.startNew(req.params.functionName, undefined, {uuid: "123"});
 
     context.log(`Started orchestration with ID = '${instanceId}'.`);
-
     return client.createCheckStatusResponse(context.bindingData.req, instanceId);
 };
 

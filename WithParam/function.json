@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "userAccount",
+      "databaseName": "bankiwi",
+      "collectionName": "Users",
+      "connectionStringSetting": "BankiwiDB",
+      "id": "{uuid}",
+      "partitionKey": "{uuid}"
+    }
+  ],
+  "scriptFile": "../dist/WithParam/index.js"
+}
