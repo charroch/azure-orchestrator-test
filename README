@@ -1,0 +1,7 @@
+# Orchestrator function with and without bindings #
+
+Step to reproduce:
+1. Create a local.settings.json with COSMOS DB connection 
+2. Create the db with corresponding databaseName, collectionName and connection within function.json
+3. Open http://localhost:7071/api/orchestrators/WithValue (logging of the binding appears in console and value in the orchestrator)
+4. Open http://localhost:7071/api/orchestrators/WithParam (no logging, no value but orchestrator finished in success)
